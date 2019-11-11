@@ -8,7 +8,7 @@
     "server": "nodemon index.js",
     "client": "npm start --prefix lmatui",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "start":"app.js"
+    "start":"node app.js"
   },
   "author": "shubham baswal",
   "license": "ISC",
