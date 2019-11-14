@@ -72,23 +72,23 @@ app.post('/send', (req, res) => {
   });
   });
 
-<<<<<<< HEAD
-  app.use(express.static(path.join(__dirname, 'lmatui/build')));
+// <<<<<<< HEAD
+//   app.use(express.static(path.join(__dirname, 'lmatui/build')));
 
-  app.use((req, res) => {
-    res.sendFile(path.join(__dirname, 'lmatui', 'build', 'index.html'))
-  })
-  if (process.env.NODE_ENV === 'production') {
-    // app.use((req, res) => {
-    //   res.sendFile(path.join(__dirname, 'lmatui', 'build', 'index.html'))
-    // })
-    app.use(express.static('lmatui/build'));
+//   app.use((req, res) => {
+//     res.sendFile(path.join(__dirname, 'lmatui', 'build', 'index.html'))
+//   })
+//   if (process.env.NODE_ENV === 'production') {
+//     // app.use((req, res) => {
+//     //   res.sendFile(path.join(__dirname, 'lmatui', 'build', 'index.html'))
+//     // })
+//     app.use(express.static('lmatui/build'));
       
-    app.get('*', (req, res) => {
-      res.sendFile(path.join(__dirname, 'lmatui', 'build', 'index.html'));
-    });
-  }
-=======
+//     app.get('*', (req, res) => {
+//       res.sendFile(path.join(__dirname, 'lmatui', 'build', 'index.html'));
+//     });
+//   }
+// =======
 
 app.use(express.static(path.join(__dirname, 'lmatui/build')));
 
@@ -106,7 +106,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
->>>>>>> 67b8a5de00c2bc54602e45404e0291754279a97c
 
 
 
